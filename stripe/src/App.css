@@ -1,0 +1,33 @@
+.holder {
+  display: flex;
+  flex-direction: row;
+}
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+.body {
+  margin-left: 100px;
+  width: 100%;
+}
+.selected {
+  color: red;
+}
+.unselected {
+  color: blue;
+}
+h2 { 
+  margin-top: 30px
+}
+table { 
+  width: 90%;
+  border-collapse: collapse;
+}
+td {
+  border: 1px solid #ccc;
+  padding: 3px 5px;
+}
+thead td {
+  font-weight: bold;
+  text-align: center;
+}
