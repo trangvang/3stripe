@@ -7,8 +7,10 @@ import Checkout from './components/payment/Checkout';
 import Payments from './components/payment/Payments';
 import {withStripe, withStripeData} from './StripeApi';
 
-const publicKey = 'pk_test_a9UpYXCGToBoIajBDTn39ngA';
-const secretKey = 'sk_test_Sr8B9ngZAxXTK5hR38g0mya8';
+const env = require('./env.json');
+
+const publicKey = env.publicKey;
+const secretKey = env.secretKey;
 
 const SuperCheckout = withStripe(Checkout, publicKey, secretKey);
 const SuperPayments = withStripeData(Payments, publicKey, secretKey,'charges');
